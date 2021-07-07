@@ -15,6 +15,8 @@
 		6282672D26953E160073B185 /* DailyJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6282672B26953E160073B185 /* DailyJournal.xcdatamodeld */; };
 		6282672F26953E1E0073B185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6282672E26953E1E0073B185 /* Assets.xcassets */; };
 		6282673226953E1E0073B185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282673026953E1E0073B185 /* LaunchScreen.storyboard */; };
+		62C801D22695617B00DFA877 /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C801D02695617B00DFA877 /* Entry+CoreDataClass.swift */; };
+		62C801D32695617B00DFA877 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C801D12695617B00DFA877 /* Entry+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		6282672E26953E1E0073B185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6282673126953E1E0073B185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6282673326953E1E0073B185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C801D02695617B00DFA877 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		62C801D12695617B00DFA877 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 			children = (
 				6282672226953E160073B185 /* AppDelegate.swift */,
 				6282672426953E160073B185 /* SceneDelegate.swift */,
+				62C801D02695617B00DFA877 /* Entry+CoreDataClass.swift */,
+				62C801D12695617B00DFA877 /* Entry+CoreDataProperties.swift */,
 				625BC10226954CC000C04322 /* EntriesTableViewController.swift */,
 				625BC10426954D2A00C04322 /* EntryViewController.swift */,
 				6282672826953E160073B185 /* Main.storyboard */,
@@ -144,9 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				625BC10326954CC000C04322 /* EntriesTableViewController.swift in Sources */,
+				62C801D32695617B00DFA877 /* Entry+CoreDataProperties.swift in Sources */,
 				625BC10526954D2A00C04322 /* EntryViewController.swift in Sources */,
 				6282672326953E160073B185 /* AppDelegate.swift in Sources */,
 				6282672526953E160073B185 /* SceneDelegate.swift in Sources */,
+				62C801D22695617B00DFA877 /* Entry+CoreDataClass.swift in Sources */,
 				6282672D26953E160073B185 /* DailyJournal.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

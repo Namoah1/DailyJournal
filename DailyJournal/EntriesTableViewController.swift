@@ -16,7 +16,16 @@ class EntriesTableViewController: UITableViewController {
 
     }
 
-
+    override func viewWillAppear(_ animated: Bool) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            
+            //Conduct a fetch request
+            if let entriesFromCoreData = try? context.fetch(Entry.fetchRequest()) as? [Entry] {
+                entries = entriesFromCoreData
+                self.tableView.reloadData()
+            }
+        }
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -35,7 +44,7 @@ class EntriesTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let entryVC = segue.destination as? EntryViewController{
-            entryVC.entriesVC = self
+            
         }
     }
 

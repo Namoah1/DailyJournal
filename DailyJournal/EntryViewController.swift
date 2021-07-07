@@ -12,8 +12,7 @@ class EntryViewController: UIViewController {
     @IBOutlet weak var entryDatePicker: UIDatePicker!
     @IBOutlet weak var entryTextView: UITextView!
     
-    var entriesVC: EntriesTableViewController?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,14 +20,16 @@ class EntryViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        //make an entry object
-        let newEntry = Entry()
-        newEntry.text = entryTextView.text
-        newEntry.date = entryDatePicker.date
+        //Create an entry object using CoreData
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            let newEntry = Entry(context: context)
+            newEntry.text = entryTextView.text
+            newEntry.date = entryDatePicker.date
+            
+            //Save into CoreData
+            (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        }
         
-        //Add entry to TV array
-        entriesVC?.entries.append(newEntry)
-        entriesVC?.tableView.reloadData()
     }
     
 
