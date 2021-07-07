@@ -35,7 +35,7 @@
                         <barButtonItem key="backBarButtonItem" title="Entries" id="Qya-I8-aUv"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" style="done" id="vzX-iU-M1c">
                             <connections>
-                                <segue destination="7UY-dr-JDQ" kind="show" id="44d-jr-IOe"/>
+                                <segue destination="7UY-dr-JDQ" kind="show" identifier="segueToEntry" id="44d-jr-IOe"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,6 +83,9 @@
                     <navigationItem key="navigationItem" id="1n4-US-c6R">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="trash" catalog="system" style="done" id="pjs-Xa-P1E">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="deleteTapped:" destination="7UY-dr-JDQ" id="2Mx-ba-FSx"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
