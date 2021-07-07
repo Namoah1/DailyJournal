@@ -17,6 +17,7 @@
 		6282673226953E1E0073B185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6282673026953E1E0073B185 /* LaunchScreen.storyboard */; };
 		62C801D22695617B00DFA877 /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C801D02695617B00DFA877 /* Entry+CoreDataClass.swift */; };
 		62C801D32695617B00DFA877 /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C801D12695617B00DFA877 /* Entry+CoreDataProperties.swift */; };
+		62C801D5269574AF00DFA877 /* EntryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C801D4269574AF00DFA877 /* EntryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6282673326953E1E0073B185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62C801D02695617B00DFA877 /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
 		62C801D12695617B00DFA877 /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		62C801D4269574AF00DFA877 /* EntryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				6282673026953E1E0073B185 /* LaunchScreen.storyboard */,
 				6282673326953E1E0073B185 /* Info.plist */,
 				6282672B26953E160073B185 /* DailyJournal.xcdatamodeld */,
+				62C801D4269574AF00DFA877 /* EntryTableViewCell.swift */,
 			);
 			path = DailyJournal;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C801D5269574AF00DFA877 /* EntryTableViewCell.swift in Sources */,
 				625BC10326954CC000C04322 /* EntriesTableViewController.swift in Sources */,
 				62C801D32695617B00DFA877 /* Entry+CoreDataProperties.swift in Sources */,
 				625BC10526954D2A00C04322 /* EntryViewController.swift in Sources */,
