@@ -11,7 +11,7 @@
         <!--Daily Journal-->
         <scene sceneID="Yot-5b-kbx">
             <objects>
-                <tableViewController id="Zx6-oD-CR2" sceneMemberID="viewController">
+                <tableViewController id="Zx6-oD-CR2" customClass="EntriesTableViewController" customModule="DailyJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bIU-LO-xsD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1156.521739130435" y="-25.446428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="baO-Wc-drd">
             <objects>
-                <viewController id="7UY-dr-JDQ" sceneMemberID="viewController">
+                <viewController id="7UY-dr-JDQ" customClass="EntryViewController" customModule="DailyJournal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VDF-aP-LSj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,10 @@
                             <color key="tintColor" systemColor="systemRedColor"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="entryDatePicker" destination="SN3-TL-Kpr" id="V3T-JV-WBc"/>
+                        <outlet property="entryTextView" destination="Wj8-6n-F2R" id="bUb-fj-sPu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBw-fJ-1cA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
