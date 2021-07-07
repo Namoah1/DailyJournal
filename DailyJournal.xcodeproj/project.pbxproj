@@ -71,13 +71,13 @@
 				62C801D02695617B00DFA877 /* Entry+CoreDataClass.swift */,
 				62C801D12695617B00DFA877 /* Entry+CoreDataProperties.swift */,
 				625BC10226954CC000C04322 /* EntriesTableViewController.swift */,
+				62C801D4269574AF00DFA877 /* EntryTableViewCell.swift */,
 				625BC10426954D2A00C04322 /* EntryViewController.swift */,
 				6282672826953E160073B185 /* Main.storyboard */,
 				6282672E26953E1E0073B185 /* Assets.xcassets */,
 				6282673026953E1E0073B185 /* LaunchScreen.storyboard */,
 				6282673326953E1E0073B185 /* Info.plist */,
 				6282672B26953E160073B185 /* DailyJournal.xcdatamodeld */,
-				62C801D4269574AF00DFA877 /* EntryTableViewCell.swift */,
 			);
 			path = DailyJournal;
 			sourceTree = "<group>";
