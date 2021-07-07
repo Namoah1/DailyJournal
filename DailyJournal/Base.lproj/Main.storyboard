@@ -24,7 +24,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIJ-DD-Yul">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIJ-DD-Yul">
                                             <rect key="frame" x="20" y="11" width="72" height="37"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="O8n-Ta-iSR"/>
@@ -57,6 +57,11 @@
                                         <constraint firstItem="n2h-f0-DYF" firstAttribute="leading" secondItem="ZIJ-DD-Yul" secondAttribute="trailing" constant="20" id="zdG-6T-uzC"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dayLabel" destination="CJK-XM-rwh" id="9sr-Kj-n7U"/>
+                                    <outlet property="entryTextLabel" destination="n2h-f0-DYF" id="0ZG-3e-YRb"/>
+                                    <outlet property="monthLabel" destination="ZIJ-DD-Yul" id="aBk-zj-LjL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

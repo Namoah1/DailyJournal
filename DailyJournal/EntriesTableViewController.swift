@@ -33,10 +33,12 @@ class EntriesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "entryCell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "entryCell") as? EntryTableViewCell {
             let entry = entries[indexPath.row]
+            cell.entryTextLabel.text = entry.text
+            cell.monthLabel.text = entry.month()
+            cell.dayLabel.text = entry.day()
             
-//            cell.textLabel?.text = entry.text
             
             return cell
         } else {
